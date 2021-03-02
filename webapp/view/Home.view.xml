@@ -1,0 +1,56 @@
+<mvc:View
+	controllerName="ui5.demo.controller.Home"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		id="page"
+		title="{i18n>title}">
+		<content>
+			<List headerText="Directions" items="{/Products}">
+				<StandardListItem
+					activeIcon=""
+					adaptTitleSize="true"
+					description=""
+					icon=""
+					iconDensityAware="true"
+					iconInset="true"
+					info="{ProductName}"
+					infoState="None"
+					infoTextDirection="Inherit"
+					title="{ProductName}"
+					titleTextDirection="Inherit"
+					counter="12"
+					highlight="None"
+					selected="false"
+					type="Inactive"
+					unread="false"
+					blocked="false"
+					busy="false"
+					busyIndicatorDelay="1000"
+					busyIndicatorSize="Medium"
+					fieldGroupIds="[]"
+					visible="true"
+				>
+					<customData>
+						<!--sap.ui.core.CustomData-->
+					</customData>
+					<dependents>
+						<!--sap.ui.core.Element-->
+					</dependents>
+					<dragDropConfig>
+						<!--sap.ui.core.dnd.DragDropBase-->
+					</dragDropConfig>
+					<layoutData>
+						<!--sap.ui.core.LayoutData-->
+					</layoutData>
+					<tooltip>
+						<!--sap.ui.core.TooltipBase-->
+					</tooltip>
+				</StandardListItem>
+			 
+			</List>
+			
+		 </content>
+	</Page>
+</mvc:View>
